@@ -1,6 +1,7 @@
 
 export const packages = [
   "@openimis/fe-core",
+  "@openimis/fe-individual",
   "@openimis/fe-home",
   "@openimis/fe-location",
   "@openimis/fe-insuree",
@@ -10,21 +11,24 @@ export const packages = [
   "@openimis/fe-policy",
   "@openimis/fe-payer",
   "@openimis/fe-contribution",
-  // "@openimis/fe-payment",
+  "@openimis/fe-payment",
   "@openimis/fe-claim",
   "@openimis/fe-claim_batch",
   "@openimis/fe-admin",
   "@openimis/fe-tools",
   "@openimis/fe-profile",
+  "@openimis/fe-language_fr",
   "@openimis/fe-calculation",
   "@openimis/fe-policyholder",
   "@openimis/fe-contribution_plan",
+  "@openimis/fe-payment_cycle",
   "@openimis/fe-contract",
   "@openimis/fe-invoice",
+  "@openimis/fe-social_protection",
+  "@openimis/fe-tasks_management",
   "@openimis/fe-opensearch_reports",
-  // "@openimis/fe-grievance_social_protection",
-  "@openimis/fe-nepal_language_pack",
-  "@openimis/fe-claim_sampling"
+  "@openimis/fe-payroll",
+  "@openimis/fe-deduplication"
 ];
 
 
@@ -35,6 +39,13 @@ export function loadModules(cfg = {}) {
     loadedModules.push(require("@openimis/fe-core").CoreModule(cfg["fe-core"] || {}));
   } catch (error) {
     alert(`Failed to load module "@openimis/fe-core". More details can be found in the developer console. Look for: ${error}`);
+    console.error(error);
+  }
+
+  try {
+    loadedModules.push(require("@openimis/fe-individual").IndividualModule(cfg["fe-individual"] || {}));
+  } catch (error) {
+    alert(`Failed to load module "@openimis/fe-individual". More details can be found in the developer console. Look for: ${error}`);
     console.error(error);
   }
 
@@ -101,12 +112,12 @@ export function loadModules(cfg = {}) {
     console.error(error);
   }
 
-  // try {
-  //   loadedModules.push(require("@openimis/fe-payment").PaymentModule(cfg["fe-payment"] || {}));
-  // } catch (error) {
-  //   alert(`Failed to load module "@openimis/fe-payment". More details can be found in the developer console. Look for: ${error}`);
-  //   console.error(error);
-  // }
+  try {
+    loadedModules.push(require("@openimis/fe-payment").PaymentModule(cfg["fe-payment"] || {}));
+  } catch (error) {
+    alert(`Failed to load module "@openimis/fe-payment". More details can be found in the developer console. Look for: ${error}`);
+    console.error(error);
+  }
 
   try {
     loadedModules.push(require("@openimis/fe-claim").ClaimModule(cfg["fe-claim"] || {}));
@@ -144,6 +155,13 @@ export function loadModules(cfg = {}) {
   }
 
   try {
+    loadedModules.push(require("@openimis/fe-language_fr").LanguageFrModule(cfg["fe-language_fr"] || {}));
+  } catch (error) {
+    alert(`Failed to load module "@openimis/fe-language_fr". More details can be found in the developer console. Look for: ${error}`);
+    console.error(error);
+  }
+
+  try {
     loadedModules.push(require("@openimis/fe-calculation").CalculationModule(cfg["fe-calculation"] || {}));
   } catch (error) {
     alert(`Failed to load module "@openimis/fe-calculation". More details can be found in the developer console. Look for: ${error}`);
@@ -165,6 +183,13 @@ export function loadModules(cfg = {}) {
   }
 
   try {
+    loadedModules.push(require("@openimis/fe-payment_cycle").PaymentCycleModule(cfg["fe-payment_cycle"] || {}));
+  } catch (error) {
+    alert(`Failed to load module "@openimis/fe-payment_cycle". More details can be found in the developer console. Look for: ${error}`);
+    console.error(error);
+  }
+
+  try {
     loadedModules.push(require("@openimis/fe-contract").ContractModule(cfg["fe-contract"] || {}));
   } catch (error) {
     alert(`Failed to load module "@openimis/fe-contract". More details can be found in the developer console. Look for: ${error}`);
@@ -179,30 +204,37 @@ export function loadModules(cfg = {}) {
   }
 
   try {
+    loadedModules.push(require("@openimis/fe-social_protection").SocialProtectionModule(cfg["fe-social_protection"] || {}));
+  } catch (error) {
+    alert(`Failed to load module "@openimis/fe-social_protection". More details can be found in the developer console. Look for: ${error}`);
+    console.error(error);
+  }
+
+  try {
+    loadedModules.push(require("@openimis/fe-tasks_management").TasksManagementModule(cfg["fe-tasks_management"] || {}));
+  } catch (error) {
+    alert(`Failed to load module "@openimis/fe-tasks_management". More details can be found in the developer console. Look for: ${error}`);
+    console.error(error);
+  }
+
+  try {
     loadedModules.push(require("@openimis/fe-opensearch_reports").OpenSearchReportsModule(cfg["fe-opensearch_reports"] || {}));
   } catch (error) {
     alert(`Failed to load module "@openimis/fe-opensearch_reports". More details can be found in the developer console. Look for: ${error}`);
     console.error(error);
   }
 
-  // try {
-  //   loadedModules.push(require("@openimis/fe-grievance_social_protection").GrievanceModule(cfg["fe-grievance_social_protection"] || {}));
-  // } catch (error) {
-  //   alert(`Failed to load module "@openimis/fe-grievance_social_protection". More details can be found in the developer console. Look for: ${error}`);
-  //   console.error(error);
-  // }
-
-  // try {
-  //   loadedModules.push(require("@openimis/fe-nepal_language_pack").NepalLanguageModule(cfg["fe-nepal_language_pack"] || {}));
-  // } catch (error) {
-  //   alert(`Failed to load module "@openimis/fe-nepal_language_pack". More details can be found in the developer console. Look for: ${error}`);
-  //   console.error(error);
-  // }
+  try {
+    loadedModules.push(require("@openimis/fe-payroll").PayrollModule(cfg["fe-payroll"] || {}));
+  } catch (error) {
+    alert(`Failed to load module "@openimis/fe-payroll". More details can be found in the developer console. Look for: ${error}`);
+    console.error(error);
+  }
 
   try {
-    loadedModules.push(require("@openimis/fe-claim_sampling").ClaimSamplingModule(cfg["fe-claim_sampling"] || {}));
+    loadedModules.push(require("@openimis/fe-deduplication").DeduplicationModule(cfg["fe-deduplication"] || {}));
   } catch (error) {
-    alert(`Failed to load module "@openimis/fe-claim_sampling". More details can be found in the developer console. Look for: ${error}`);
+    alert(`Failed to load module "@openimis/fe-deduplication". More details can be found in the developer console. Look for: ${error}`);
     console.error(error);
   }
 

@@ -1711,7 +1711,7 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/lab@^4.0.0-alpha.58":
+"@material-ui/lab@^4.0.0-alpha.58", "@material-ui/lab@^4.0.0-alpha.60":
   version "4.0.0-alpha.61"
   resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-4.0.0-alpha.61.tgz#9bf8eb389c0c26c15e40933cc114d4ad85e3d978"
   integrity sha512-rSzm+XKiNUjKegj8bzt5+pygZeckNLOr+IjykH8sYdVk7dE9y2ZuUSofiMV2bJk3qU+JHwexmw+q0RyNZB9ugg==
@@ -1829,31 +1829,50 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@openimis/fe-calculation@git+https://github.com/openimis/openimis-fe-calculation_js.git#develop":
-  version "1.0.1"
-  resolved "git+https://github.com/openimis/openimis-fe-calculation_js.git#df81a641368be052544fc6b18b6a95b86dcfdcb8"
+"@openimis/fe-admin@>=v1.7.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-admin/-/fe-admin-1.9.0.tgz#bf6a72342e25d5cf4a98e3c8f049cbd224f37198"
+  integrity sha512-ZfCY2gsk3jpmJqywMp86RCegENL5re/AzCbY3vwBnZFleIff3vFIo1wmEh8WXmONkF6obtu50n0xrdFXIQdMXw==
+  dependencies:
+    "@material-ui/lab" "^4.0.0-alpha.60"
+    zxcvbn "^4.4.2"
+
+"@openimis/fe-calculation@>=v1.5.1":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-calculation/-/fe-calculation-1.6.0.tgz#41da2f6c48c120058ac709a1839a29cd9618e21c"
+  integrity sha512-pwWmLLw/QzAX7xJX7HzglG21QMfxbtXEHGwPaX7h7rV0l4P2veWMjdW8u6d/WG15bDZo2W7zafxYg9L7EpDDBg==
   dependencies:
     hot-formula-parser "^4.0.0"
 
-"@openimis/fe-claim_batch@git+https://github.com/openimis/openimis-fe-claim_batch_js.git#develop":
-  version "1.3.0"
-  resolved "git+https://github.com/openimis/openimis-fe-claim_batch_js.git#ed2fac3887a713938d679ed7a730f09ba3e40e7a"
+"@openimis/fe-claim@>=v1.6.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-claim/-/fe-claim-1.8.0.tgz#d84dc5dc6a8b3da7a0e359fd1fb8ca4fb6456f4a"
+  integrity sha512-3Tr7MXu4kjKR7I/RWpkEmxlzp36wubFFWdkkfa5jy+l6ot0O9AQQmyO52E8zZVxkeP4jAYfQWBru6YWB2U+tLw==
 
-"@openimis/fe-claim_sampling@git+https://github.com/openimis/openimis-fe-claim_sampling_js.git#develop":
-  version "1.0.0"
-  resolved "git+https://github.com/openimis/openimis-fe-claim_sampling_js.git#370f785feacfee9b634ccc39ef32cd1a4f6e12ee"
+"@openimis/fe-claim_batch@>=v1.4.3":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-claim_batch/-/fe-claim_batch-1.5.0.tgz#2267c3d8836687875b784e9ccb75c2461eaf2f79"
+  integrity sha512-FO8YOum3vECW8EGE4AezCi7ZPYfaGlV7H2kbDQ4XdSeSFSomSop2oRySpWKGvgZAm2I/ivUD47x2ltLGHwOYxw==
 
-"@openimis/fe-contract@git+https://github.com/openimis/openimis-fe-contract_js.git#develop":
-  version "1.0.0"
-  resolved "git+https://github.com/openimis/openimis-fe-contract_js.git#0e69145fdab645417895d7d37fe8d59ff311cb56"
+"@openimis/fe-contract@>=v1.5.1":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-contract/-/fe-contract-1.6.0.tgz#f5657530e6c605e30213cb42e134fb7c0f36ebda"
+  integrity sha512-BwFZz25M5yG/GVrunyiwh2yAtYM8nT2ITaebFCT3KrXxr8zUOIOquLbOwH4tlcLbQ7ux2BHkc/dALp1LPeqLhA==
 
-"@openimis/fe-contribution_plan@git+https://github.com/openimis/openimis-fe-contribution_plan_js.git#develop":
-  version "1.0.0"
-  resolved "git+https://github.com/openimis/openimis-fe-contribution_plan_js.git#942e7375b07299799e6165ce8d8a6aaaacc62e46"
+"@openimis/fe-contribution@>=v1.6.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-contribution/-/fe-contribution-1.7.0.tgz#451651f25fc0c63f72cafdaa8fa1416eb14abb3f"
+  integrity sha512-xbX15gs/KodWChxrFYSPcSsjZ8qP3AOIy0IzMg87JxYIwjCODmLBvcS5Cm9gD9n+aoZ5vbKis81rLvS9SRuwBw==
 
-"@openimis/fe-core@git+https://github.com/openimis/openimis-fe-core_js.git#develop":
-  version "1.4.0"
-  resolved "git+https://github.com/openimis/openimis-fe-core_js.git#f4548be50f397e80a45bf8ebe0a44500270ca15f"
+"@openimis/fe-contribution_plan@>=v1.7.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-contribution_plan/-/fe-contribution_plan-1.9.0.tgz#a0addcad4f6736d99d85117d225f986d283e6c09"
+  integrity sha512-cXF3gQDrgCsbUkyMq1gLExV8yCvjIGtCoCrnvl00Rlhc6kWhhbYYOGIOGy7qhgz6JFnX+2vrpYmWxrX+9ji/mA==
+
+"@openimis/fe-core@>=v1.7.1":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-core/-/fe-core-1.9.0.tgz#92a0ea09f8ff9c57b2d88bec7a53593d42907b9d"
+  integrity sha512-QG/Py79F08PYXn9LIsMqAoHswtSa6lwts59gaqpX2n2GWYHv/fxKN8vlivsPDuIM/Y6FIE9QH5P/8NbVKFOYmg==
   dependencies:
     history "^5.2.0"
     nepali-date-converter "^3.3.1"
@@ -1861,53 +1880,122 @@
     react-router "^5.2.1"
     react-router-dom "^5.2.1"
 
-"@openimis/fe-invoice@git+https://github.com/openimis/openimis-fe-invoice_js.git#develop":
-  version "0.1.0"
-  resolved "git+https://github.com/openimis/openimis-fe-invoice_js.git#14b2a478385ffcaf05a94a184900c0b31f10d249"
+"@openimis/fe-deduplication@>=v1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-deduplication/-/fe-deduplication-1.0.1.tgz#f51b8e20c97001c308a6687e7924172428aa3cd1"
+  integrity sha512-3P/ukjG6+NtRCXRrPTDn2FkCi8R8YT2EjkXrkgjlTUnQriJYudAt1w/4AtIVZQjkCU+iqmH1+MSsh/dqaQwcqA==
+
+"@openimis/fe-home@>=v1.5.3":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-home/-/fe-home-1.6.0.tgz#8faa80d62855827ed402b6696570ddd8f8c12dd9"
+  integrity sha512-kK2OxyIOgFMBKQASAsj7ceMqnSgnshEw6i1qKj+TUlrewLMN1BbIltVVbbz08Eb5tgxldiv6gkY7IlI0JPOEag==
+
+"@openimis/fe-individual@>=1.0.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-individual/-/fe-individual-1.2.0.tgz#9f943b441a15cbd3256b015fbd658790b03034fc"
+  integrity sha512-Tjyx81hcn5wBLGQJhdY+kdu6rAdatiiODUSdjO1xyDOA+oIPSwtdRZPoTBd+uUUNGILwhheIizEyZtALuetN8g==
   dependencies:
     flat "^5.0.2"
 
-"@openimis/fe-medical@git+https://github.com/openimis/openimis-fe-medical_js.git#develop":
-  version "1.3.0"
-  resolved "git+https://github.com/openimis/openimis-fe-medical_js.git#e3261aab84dc76251d75e4ec2cdb8fa9d9ec7d22"
+"@openimis/fe-insuree@>=v1.7.1":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-insuree/-/fe-insuree-1.9.0.tgz#582fe1e8cc849b15bfe48e8adbb2ecb4401d40d2"
+  integrity sha512-AOLKwGGei6sSI/xa5WX9onvNBtjesvxJTcsWJxJGMDBhB23rTqub2hxKd7PNpVkF/wL7TSLOKEMNaktOqP7gMA==
 
-"@openimis/fe-medical_pricelist@1.6.0":
+"@openimis/fe-invoice@>=v1.6.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-invoice/-/fe-invoice-1.8.0.tgz#0a68fff309802d0a849d248c028187414efc4512"
+  integrity sha512-xL0O5jOVoKeV7COmGnX0ELXcBH40KhPxqrtmvZYusZkqbVL4FvMsO0pkU4+sbvfhZ1nvlpLqmMzVC+4GdZkH9Q==
+  dependencies:
+    flat "^5.0.2"
+
+"@openimis/fe-language_fr@>=v1.6.2":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-language_fr/-/fe-language_fr-1.8.0.tgz#4d04fd4c0485af11bf4f28cb3de967e0ebff8690"
+  integrity sha512-kwhmRXzza611SXsz+IUiip1yIqVPHVEPS5ULmpM9mzg7MkieFeOmJDLDEUDCxCLW8zgSx8LnR2X9FgpaigDWbg==
+  dependencies:
+    flat "^5.0.2"
+
+"@openimis/fe-location@>=v1.5.1":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-location/-/fe-location-1.6.0.tgz#9e6f9c6257b6f0f4ddaca222cf8a5c05e400ba59"
+  integrity sha512-q1BYhoyCn1NkyoM+5Sd4ICLWMaYIYvpkSYfAAqppwdFd38U1wloCvHJ+V8Uv1uy0RViDDiEK2xISuZ9JSTJXvQ==
+
+"@openimis/fe-medical@>=v1.6.1":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-medical/-/fe-medical-1.7.0.tgz#2200bb56daeafb3cc9e0e5dafe522445ac680546"
+  integrity sha512-1p+YIE5CDBZVNTXd1hnW8/xazVgDF9fxT3hcAnEkdA9i+kfl5fmQqDwS1TsSTbA3gSdTOgemTeL/ZnOh/kIdHw==
+
+"@openimis/fe-medical_pricelist@>=v1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@openimis/fe-medical_pricelist/-/fe-medical_pricelist-1.6.0.tgz#32f470c6667d46b6071dcd5fd7975ee0e0000c22"
   integrity sha512-prA5XlEeys/4XZgXbGvgeKCLoYcKDkMcOSSpPT5m3F/g9hjpe0mwc3yX4HmJDw56vcO+IZ7gBas/eaUwxYe9AQ==
 
-"@openimis/fe-payer@git+https://github.com/openimis/openimis-fe-payer_js.git#develop":
-  version "1.4.0-rc4"
-  resolved "git+https://github.com/openimis/openimis-fe-payer_js.git#855e89046940f1f6f5f7155196cb9d6102ddebbc"
+"@openimis/fe-opensearch_reports@>=v1.1.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-opensearch_reports/-/fe-opensearch_reports-1.3.0.tgz#d9f443318c45377b1579b5cc9992cdf1cb9e6e40"
+  integrity sha512-gFHeUxvryekR3vljXsFcOd68unK+a9lNDklQrAHJI6VaPfdBlIV5VlqAJttKxDgBDLDlFhMLP5A+f5bAJSaJ2Q==
 
-"@openimis/fe-policy@git+https://github.com/openimis/openimis-fe-policy_js.git#develop":
-  version "1.2.1-rc5"
-  resolved "git+https://github.com/openimis/openimis-fe-policy_js.git#2c0748df10a8032f70bbdca2c2ef8b6a5d234b97"
+"@openimis/fe-payer@>=v1.4.4":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-payer/-/fe-payer-1.5.0.tgz#000276e47adb2e8003fb64eaa9026fee086a86ea"
+  integrity sha512-8cpaQnemP/u9WWZMgXc5oqg2Zhe/8zGfjoZijTQwNbwaPGWtdNpYFx6kxQ78+ouUehZdbk+QqKKUMXnKeQ8wZQ==
 
-"@openimis/fe-policyholder@git+https://github.com/openimis/openimis-fe-policyholder_js.git#develop":
-  version "1.0.0"
-  resolved "git+https://github.com/openimis/openimis-fe-policyholder_js.git#d2c772380d4991eb4ca03ee3137f895257699a57"
+"@openimis/fe-payment@>=v1.4.4":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-payment/-/fe-payment-1.5.0.tgz#deb67b8c68531fa1823b0d4dc20b46b1d57521dd"
+  integrity sha512-+BLxTEdS3OZYcXptXkCHmRPAx4sa2f1RqAuZxzIz5U9qDkiLChxzc1VguxoTcwJ/G9EtqULMAW3dwxl265Sfzw==
 
-"@openimis/fe-product@git+https://github.com/openimis/openimis-fe-product_js.git#develop":
-  version "1.4.0-rc2"
-  resolved "git+https://github.com/openimis/openimis-fe-product_js.git#7bd7b9741dcd4b4fe7bdd67a3e648f88429748ce"
+"@openimis/fe-payment_cycle@>=v1.0.1":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-payment_cycle/-/fe-payment_cycle-1.2.0.tgz#cbf6bb860cb0256d349a54d426be2a8bfb304166"
+  integrity sha512-lfJkfcSANQ81tdb2t60XnPXlZGvtICuPUzMIbzQ/dtdr0SOL5V8+P/Ku3GF9LPrQgz1SrpUhCLwgBJpUYz0o5g==
+
+"@openimis/fe-payroll@>=v1.1.1":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-payroll/-/fe-payroll-1.3.0.tgz#37cdc709e971b44fbca3356697ea1d187ff19779"
+  integrity sha512-x47unUUOedtpZiR/xVbjeG5qJzmfJNfT+ESTTEzqeMIaLGtONM2/lO5HeP5Ot9pPUXohawGvlMI/B7LiA+N7HQ==
+  dependencies:
+    react-to-print "^2.15.1"
+
+"@openimis/fe-policy@>=v1.7.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-policy/-/fe-policy-1.8.0.tgz#6ed1738afb507c44eb5096e18bd51b1ba828cf77"
+  integrity sha512-cQn5VXNXn2hMGkBLRR++NAu/wOSS7IR53bQntmJ12w/xa1sfy3OiUcKwlN3xwlLMChD30k6L5B7ZLH73bq2gmg==
+
+"@openimis/fe-policyholder@>=v1.5.1":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-policyholder/-/fe-policyholder-1.7.0.tgz#18911029995891248116723ded78976929e90b46"
+  integrity sha512-R79v2kHUQxq/cYsx3JLmshra+n9fdTW2EpR0BvDgmp36jEFMciHEjV1CCdAm3uz++S0BcRL4b82m1blN0OLgEQ==
+
+"@openimis/fe-product@>=v1.7.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-product/-/fe-product-1.8.0.tgz#cf10938f14add98c724a6ce56586e50ba066ec12"
+  integrity sha512-xzRiwPTJ2fof2MiCyDk5Bj1H4Is7j47fWijyqKMFYxG9kdQ4SQWHpS0aa/tFw13kZrhkOih9x3kJhd1Rm1pT1Q==
   dependencies:
     "@mui/x-data-grid" "^4.0.0"
 
-"@openimis/fe-profile@git+https://github.com/openimis/openimis-fe-profile_js.git#develop":
-  version "1.4.0"
-  resolved "git+https://github.com/openimis/openimis-fe-profile_js.git#a1475e907db6ac28b2c2e65eec1530eb551979a8"
+"@openimis/fe-profile@>=v1.6.1":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-profile/-/fe-profile-1.7.0.tgz#3d224536bd1926de1572080dfef7fcf753135880"
+  integrity sha512-AZYMS2pcKgBzhTl0vg68X+w/EHUabd4Bz6kvgkaPTePFASm/q8N4IZiEC+7ILdS6VpNj5JwjmmeAfPujkvc38A==
   dependencies:
     react-window "^1.8.8"
 
-"@openimis/fe-social_protection@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@openimis/fe-social_protection/-/fe-social_protection-1.1.1.tgz#05e055e7e44bb362afb0dabfad799168fe140373"
-  integrity sha512-sfJp85dWMLOPujlmCUN7lhZ8fgby79lkjULf44USNHqHaTTd1tdBHmM8sKtBcjlvPrtTEAP8DRPttzuzGcgs1w==
+"@openimis/fe-social_protection@>=v1.1.1":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-social_protection/-/fe-social_protection-1.3.0.tgz#704d9590fb107e8cad5c3eb03bbb048e24880e24"
+  integrity sha512-HkFjNn1eba8Gbzs+NIHehpnAlF31Bygb3grqIQhSV7BE9UZGkJhrHnZS1daj6rQ0QH4dym7clKnCaojIV4XbhQ==
 
-"@openimis/fe-tools@git+https://github.com/openimis/openimis-fe-tools_js.git#develop":
-  version "1.5.1"
-  resolved "git+https://github.com/openimis/openimis-fe-tools_js.git#fe84a67e400eda5a890a3dcadf3cb9321a6f2a30"
+"@openimis/fe-tasks_management@>=v1.1.1":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-tasks_management/-/fe-tasks_management-1.3.0.tgz#cbfe8c29fb8a220e97148c75bbafd88586a8ef9c"
+  integrity sha512-YlyFbySL2xQBmP3n21WJFtS6nGJgBK0yYaj/HzK/Rt4Gm/9G83Gpfe62vOkM4I+eU+aTpKBgg4n+amhYBTIVDA==
+
+"@openimis/fe-tools@>=v1.6.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@openimis/fe-tools/-/fe-tools-1.7.0.tgz#184794d1971b9887b757ba204bd65365db8a1577"
+  integrity sha512-oUlJCobTV4IRQsxqOTz8WfMNif4AmeYE1QGtaaACRVMkWWQlcgnJcj1KqrXzdO0IjsbFmI7tSvRoAAmkttSz1Q==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -8438,6 +8526,11 @@ react-themeable@^1.1.0:
   integrity sha512-kl5tQ8K+r9IdQXZd8WLa+xxYN04lLnJXRVhHfdgwsUJr/SlKJxIejoc9z9obEkx1mdqbTw1ry43fxEUwyD9u7w==
   dependencies:
     object-assign "^3.0.0"
+
+react-to-print@^2.15.1:
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.15.1.tgz#c9a6732cadf1118fc90d886b54a9388c419561b9"
+  integrity sha512-1foogIFbCpzAVxydkhBiDfMiFYhIMphiagDOfcG4X/EcQ+fBPqJ0rby9Wv/emzY1YLkIQy/rEgOrWQT+rBKhjw==
 
 react-transition-group@^4.0.0, react-transition-group@^4.4.0:
   version "4.4.5"
