@@ -1,5 +1,4 @@
-# openIMIS frontend assembly
-
+# Modified Copy of OpenIMIS for Ministry of Health Malawi
 ## running
 
 this repository builds:
