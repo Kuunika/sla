@@ -1,5 +1,5 @@
 node_modules/
-!node_modules/@openimis/fe-claim
+!node_modules/@openimis/fe-claim/
 package-lock.json
 yarn.lock
 yarn-error.log
